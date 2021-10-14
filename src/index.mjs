@@ -1,3 +1,9 @@
-import { setupCli } from './cli/setup-cli.function.mjs';
+import fs from 'fs';
+import { initializeCli } from './cli/initialize-cli.function.mjs';
 
-console.log(setupCli().argv);
+const { output } = initializeCli();
+
+const projectPath = process.cwd();
+const fullOutputPath = `${projectPath}/${output}`;
+
+fs.writeFileSync(fullOutputPath, 'console.log("it works!");');
