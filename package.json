@@ -2,9 +2,9 @@
   "name": "playpack",
   "version": "1.0.0",
   "description": "My personal javascript bundler",
-  "main": "index.mjs",
+  "main": "src/index.mjs",
   "scripts": {
-    "start": "node index.mjs",
+    "start": "node src/index.mjs",
     "format": "yarn prettier --write",
     "prettier": "prettier \"**/*.mjs\""
   },
@@ -30,6 +30,9 @@
   },
   "homepage": "https://github.com/playerony/playpack#readme",
   "dependencies": {
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
     "prettier": "^2.4.1"
   }
 }
