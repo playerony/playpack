@@ -1,0 +1,35 @@
+{
+  "name": "playpack",
+  "version": "1.0.0",
+  "description": "My personal javascript bundler",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "format": "yarn prettier --write",
+    "prettier": "prettier \"**/*.mjs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playerony/playpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "playerony",
+    "playpack",
+    "bundler",
+    "graph",
+    "javascript",
+    "simple",
+    "cli",
+    "node"
+  ],
+  "author": "Paweł Wojtasiński",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/playerony/playpack/issues"
+  },
+  "homepage": "https://github.com/playerony/playpack#readme",
+  "dependencies": {
+    "prettier": "^2.4.1"
+  }
+}
