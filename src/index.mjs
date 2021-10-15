@@ -10,6 +10,5 @@ const fullOutputPath = `${projectPath}/${output}`;
 
 const dependencyGraph = buildDependencyGraph(entry);
 const bundledStuff = bundle(dependencyGraph);
-const bundledStuffAsString = JSON.stringify(bundledStuff);
 
-fs.writeFileSync(fullOutputPath, `const value = ${bundledStuffAsString}\n`);
+fs.writeFileSync(fullOutputPath, bundledStuff);
