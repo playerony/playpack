@@ -21,7 +21,7 @@ const toWebpackModuleMap = (modules) => {
 };
 
 const addRuntime = (moduleMap, entryPoint) =>
-`
+  `
   const modules = ${moduleMap};
   const entry = "${entryPoint}";
   function webpackStart({ modules, entry }) {
